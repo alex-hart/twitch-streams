@@ -70,6 +70,11 @@ a.stream-link {
   color: black;
 }
 
+a.stream-link:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .streamer-div:hover {
   background-color: grey;
 }
