@@ -1,0 +1,87 @@
+.jumbotron-fluid {
+  margin-bottom: 0px;
+  background-color: #302e2e;
+  min-height: 100vh;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.title-bar {
+  background-color: #563663;
+  font-size: 16px;
+  color: #d1a8ea;
+  padding: 5px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+#twitch-logo {
+  width: 100px;
+  float: left;
+  margin-right: 2px;
+}
+
+.stream-box {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  height: 400px;
+  overflow: auto;
+}
+
+#info-box {
+  margin: 0 auto;
+  height: 80%;
+}
+
+.icon {
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+.status-online {
+  color: Red;
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.offline {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+#viewers {
+  float: right;
+}
+
+a.stream-link {
+  text-decoration: none;
+  color: black;
+}
+
+.streamer-div:hover {
+  background-color: grey;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #302e2e;
+  margin-top: -30px;
+}
+
+#name-space {
+  color: inherit;
+  text-decoration: underline;
+}
