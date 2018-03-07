@@ -41,17 +41,11 @@ $(function() {
       viewers = streamData.stream.viewers;
       game = streamData.stream.game;
       $infoBox.prepend(
-        "<a class='stream-link' href='" +
-          channelURL +
-          "' target='_blank'> <div class='streamer-div'> <img src='" +
-          icon +
-          "' class='icon' /> <i class='fa fa-circle status-online' aria-hidden = 'true'></i> <p id='viewers'>" +
-          viewers +
-          "</p> <p><b>" +
-          name +
-          "</b></p> <p>Playing: " +
-          game +
-          "</p> </div> </a>"
+        "<a class='stream-link' href='" + channelURL +
+        "' target='_blank'> <div class='streamer-div'> <img src='" + icon +
+        "' class='icon' /> <i class='fa fa-circle status-online' aria-hidden = 'true'></i> <p id='viewers'>"
+        + viewers + "</p> <p><b>" + name + "</b></p> <p>Playing: " + game +
+        "</p> </div> </a>"
       );
     }
   }
