@@ -18,6 +18,7 @@ $(function() {
     "riotgames"
   ];
 
+  var $infoBox = $("#info-box");
   function updatePage(streamData, channelData) {
     var name, status, game, icon, viewers, channelURL;
     name = channelData.display_name;
@@ -25,7 +26,7 @@ $(function() {
     channelURL = "https://www.twitch.tv/" + channelData.name;
     if (streamData.stream === null) {
       game = "Offline";
-      $("#info-box").append(
+      $infoBox.append(
         "<a class='stream-link' href='" +
           channelURL +
           "' target='_blank'> <div class='streamer-div'> <img src='" +
@@ -39,7 +40,7 @@ $(function() {
     } else {
       viewers = streamData.stream.viewers;
       game = streamData.stream.game;
-      $("#info-box").prepend(
+      $infoBox.prepend(
         "<a class='stream-link' href='" +
           channelURL +
           "' target='_blank'> <div class='streamer-div'> <img src='" +
